@@ -11,7 +11,9 @@ import os
 import sys
 
 from django.core.wsgi import get_wsgi_application
-
+sys.path.append('/home/yatu/hackmobile_server/')
+sys.path.append('/home/yatu/hackmobile_server/mlearn/')
+sys.path.append('/home/yatu/')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hackmobile.settings")
 
 application = get_wsgi_application()
