@@ -4,7 +4,8 @@ from mlearn.models import Mlearn
 class MlearnSerializer(serializers.Serializer):
     pk = serializers.IntegerField(read_only=True)
     experiment_text = serializers.CharField(max_length=100)
-
+    image = models.ImageField(upload_to='photos')
+    
     def create(self, validated_data):
         """
         Create and return a new `Mlearn` instance, given the validated data.
