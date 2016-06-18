@@ -7,7 +7,7 @@ from django.db import models
 class Mlearn(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     experiment_text = models.TextField()
-    image = models.ImageField(upload_to='photos')
+#    image = models.ImageField(upload_to='photos')
 
     class Meta:
     	ordering = ('created',)
