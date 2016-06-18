@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from mlearn.models import Mlearn
-
+from PIL import Image
+import PIL
 class MlearnSerializer(serializers.Serializer):
     pk = serializers.IntegerField(read_only=True)
     experiment_text = serializers.CharField(max_length=100)
